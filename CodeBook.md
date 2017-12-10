@@ -1,10 +1,10 @@
-#Introduction
+# Introduction
 
 The raw data used in this cookbook are available at the following address: http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 To get a description of the study, please visit the URL: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-#Transformations to clean the data
+# Transformations to clean the data
 
 * The following files of the train data set have been cbind in this order:
   * subject_train
@@ -26,7 +26,7 @@ To get a description of the study, please visit the URL: http://archive.ics.uci.
   Mag replaced with Magnitude
   BodyBody replaced with Body
 
-The script run_analysis.R
+# The script run_analysis.R
 
 * downloads the data from UCI Machine Learning Repository
 * merges the training and test sets to create one data set
@@ -35,12 +35,12 @@ The script run_analysis.R
 * appropriately labels the columns with descriptive names
 * creates a second, independent tidy dataset with an average of each variable for   each each activity and each subject. In other words, same type of measurements  * for a particular subject and activity are averaged into one value and the tidy    data set contains these mean values only. The processed tidy data set is also     exported as csv file.
   
-#run_analysis.R
+# run_analysis.R
 
 The script is parititioned into several levels such that it performs one by one 
 each of the steps described above. To run whole cleaning procedure, run the script. The script also assumes that plyr library is already installed.
 
-#The original data set
+# The original data set
 
 The original data set is split into training and test sets (70% and 30%, respectively) where each partition is also split into three files that contain
 
@@ -48,7 +48,7 @@ The original data set is split into training and test sets (70% and 30%, respect
 * activity label
 * identifier of the subject
 
-#Getting and cleaning data
+# Getting and cleaning data
 
 If the data is not already available in the data directory, it is downloaded from UCI repository.
 
